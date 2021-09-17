@@ -1,8 +1,12 @@
 .divgrafica{
     position: absolute;
-    top: 110%;
+    top: 110%;    
     width: 75%;
     height: 50%;
+}
+.divgrafica h1{
+    font-size: 30px;
+    text-align: center;
 }
 #mapa{
     position: relative;
@@ -30,7 +34,7 @@ body{
     background: #0D0D0D;
     border-radius: 5px;
     border-left: #F23C13 solid 10px;
-    width: 30%;
+    width: 25%;
     padding: 20px;
 }
 #h h2{
@@ -43,7 +47,7 @@ body{
 }
 #t{
     position: absolute;
-    right: 8%;
+    right: 10%;
     top: 20%;
     background: #034936;
     border-radius: 5px;
@@ -244,19 +248,27 @@ body{
     border-radius: 5px;
     padding: 20px;
 }
+/* Style solo de pagina index */
+.htmlindex{
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
 table {
+    border-radius: 20px;
     margin: auto;
     position: absolute;
     z-index: 20;
-    background-color: rgb(11, 103, 123, 0.7);
-    cursor: pointer;
-    	
-
+    color:lightgray;
+    /* background-color: ; */
+    background-color: hsla( 0.75turn , 0% , 0% , 0.7 );;
+    cursor: pointer;  	
 }
 
 tr,td{
-    border: solid 0.5px black;
+    
+    padding: 8px;
+    border: inset 0;
 
 }
 img{  

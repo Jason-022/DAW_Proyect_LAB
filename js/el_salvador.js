@@ -23,7 +23,7 @@ function mapa(){
 }
 function Santa_Ana(){
      fila="";
-     fila+="<table  >";
+     fila+="<table>";
      fila+="<tr>";
      fila+="<td><b>Cabecera departamental</b></td>";
      fila+="<td><b>Santa Ana</b></td>";
