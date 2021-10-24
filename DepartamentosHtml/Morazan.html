@@ -13,7 +13,7 @@
     <title>Mapa de El Salvador</title>
 </head>
 
-<body>
+<body onload="morazan()">
     <header></header>
       <nav class="navbar navbar-light bg-light fixed-top">
         <div class="container-fluid">
@@ -69,69 +69,37 @@
 
     <section>
       <div id="imagen">
-        <img src="../img/Morazan.png" alt="">
       </div>
 
       <div id="h">
         <h2>Habitantes:</h2>
-        <h4>252,500  </h4>
+        <h4 id="habitantes"></h4>
       </div>
       <div id="t">
         <h2>Extencion territorial:</h2>
-        <h4>1,447km<sup>2</sup></h4>
+        <h4 id="extencion"></h4>
       </div>
 
       <div id="d2">
         <h2>Dato historico</h2>
-        <p>Uno de los aspectos históricos más valiosos del departamento de Morazán es que aún, se encuentran restos de la presencia de los primeros pobladores de la región. Los vestigios de estos indígenas han quedado plasmados en pinturas rupestres al interior de la Cueva del Espíritu Santo ubicada en el municipio de Corinto.</p>
-        <br>
-        <p>A la llegada de los españoles, los indígenas que habitaban la región eran los lencas. Estos se enfrentaron a los conquistadores que vinieron desde el viejo continente. Por órdenes presidenciales de Santiago González, se fundó con el nombre de Gotera el día 14 de marzo de 1875.</p>
-        <br>
-        <p>Más adelante, en el año 1887, por un decreto presidencial, cambió su nombre por departamento de Morazán en honor al General Francisco Morazán, quien había contribuido activamente a la estructuración de este departamento.</p>
+        <div id="historico"></div>
       </div>
 
       <div id="m">
         <h2>Lista de los municipios</h2>
-        <ol>
-          <li>San Francisco (Cabecera departamental)</li>
-          <li>Arambala</li>
-          <li>Cacaopera</li>
-          <li>Chilanga</li>
-          <li>Corinto</li>
-          <li>Delicias de Concepción</li>
-          <li>El Divisadero</li>
-          <li>El Rosario</li>
-          <li>Gualococti</li>
-          <li>Guatajiagua</li>
-          <li>Juateca</li>
-          <li>Jocoaitique</li>
-          <li>Jocoro</li>
-          <li>Lolotiquillo</li>
-          <li>Meanguera</li>
-          <li>Osicala</li>
-          <li>Perquín</li>
-          <li>San Carlos</li>
-          <li>San Fernando </li>
-          <li>San Isidro</li>
-          <li>San Simón</li>
-          <li>Sensembra</li>
-          <li>Sociedad</li>
-          <li>Torola</li>
-          <li>Yamabal</li>
-          <li>Yoloaquín</li>
+        <ol id="lm">
+          
 
         </ol>
       </div>
       <div id="l2">
         <h2>Lugares turísticos</h2>
-        <ul>
-          <li>La Gruta del Espíritu Santo</li>
-          <li>Museo Planeur Bleu</li>
-          <li>La Ruta de La Paz</li>
-          <li>El Valle del Muerto</li>
+        <ul id="ll">
+         
         </ul>
       </div>
     </section>
+    <script src="../js/departamentos.js"></script>
 </body>
 
 </html>

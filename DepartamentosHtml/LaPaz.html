@@ -13,7 +13,7 @@
     <title>Mapa de El Salvador</title>
 </head>
 
-<body>
+<body onload="paz()">
     <header></header>
       <nav class="navbar navbar-light bg-light fixed-top">
         <div class="container-fluid">
@@ -69,61 +69,36 @@
 
       <section>
         <div id="imagen">
-          <img src="../img/La_Paz.png" alt="">
         </div>
   
         <div id="h">
           <h2>Habitantes:</h2>
-          <h4>288,022</h4>
+          <h4 id="habitantes"></h4>
         </div>
   
         <div id="t">
           <h2>Extencion territorial:</h2>
-          <h4>1,223,61km<sup>2</sup></h4>
+          <h4 id="extencion"></h4>
         </div>
         <div id="d2">
           <h2>Dato historico</h2>
-          <p>Estuvo habitada para finales del siglo XI por una serie de comunidades de procedencia mayas-quiches o también conocidos como mayances. Así mismo, también se sabe que cerca de esta fecha fue cuando se produjo la primera ola de invasiones de pueblos centroamericanos de cultura nahuas.</p>
+          <div id="historico"></div>
         </div>
   
         <div id="m1">
           <h2>Lista de los municipios</h2>
-          <ol>
-            <li>Zacatecoluca (Cabecera departamental)</li>
-            <li>Cuyultitán</li>
-            <li>Jerusalén</li>
-            <li>El Rosario</li>
-            <li>Paraíso de Osorio</li>
-            <li>Olocuilta</li>
-            <li>Mercedes la Ceiba</li>
-            <li>San Emigdio</li>
-            <li>San Antonio Masahuat</li>
-            <li>San Francisco Chinameca</li>
-            <li>San Pedro Masahuat</li>
-            <li>San Juan Talpa</li>
-            <li>San Juan Nonualco</li>
-            <li>San Juan Tepezontes</li>
-            <li>San Luis la herradura</li>
-            <li>San Luis Talpa</li>
-            <li>San Pedro Nonualco</li>
-            <li>San Miguel Tepezontes</li>
-            <li>Tapalhuca</li>
-            <li>Santa María Ostuna</li>
-            <li>Santiago Nonualco</li>
-            <li>San Rafael Obrajuelo</li>
+          <ol id="lm">
+            
           </ol>
         </div>
         <div id="l5">
           <h2>Lugares turísticos</h2>
-          <ul>
-            <li>Playa la Zunganera</li>
-            <li>Playa El Pimental</li>
-            <li>Playa Las Hojas</li>
-            <li>Lago de Ilopango</li>
-            <li>Río Jiboa en El Salvador</li>
+          <ul id="ll">
+            
           </ul>
         </div>
       </section>
+      <script src="../js/departamentos.js"></script>
 </body>
 
 </html>

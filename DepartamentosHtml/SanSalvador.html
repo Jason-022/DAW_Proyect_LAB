@@ -13,7 +13,7 @@
     <title>Mapa de El Salvador</title>
 </head>
 
-<body>
+<body onload="salvador()">
     <header></header>
       <nav class="navbar navbar-light bg-light fixed-top">
         <div class="container-fluid">
@@ -69,57 +69,37 @@
 
     <section>
       <div id="imagen">
-        <img src="../img/San_Salvador.png" alt="" >
       </div>
       
 
       <div id="h">
         <h2>Habitantes:</h2>
-        <h4>2,557,761 </h4>
+        <h4 id="habitantes"></h4>
       </div>
       <div id="t">
         <h2>Extencion territorial:</h2>
-        <h4>886.2 km<sup>2</sup></h4>
+        <h4 id="extencion"></h4>
       </div>
 
       <div id="d">
         <h2>Dato historico</h2>
-        <p>Fundado el 25 de diciembre del año 1889 por la familia de Miguel Molaro Aurora Saint Sauver, apellido éste de origen francés que quiere decir San Salvador.</p>
+        <div id="historico"></div> 
       </div>
 
       <div id="m">
         <h2>Lista de los municipios</h2>
-        <ol>
-          <li>San Salvador (Cabecera departamental)</li>
-          <li>Aguilares</li>
-          <li>Apopa</li>
-          <li>Ayutuxtepeque</li>
-          <li>Cuscatancingo</li>
-          <li>Ciudad Delgado</li>
-          <li>El Paisnal</li>
-          <li>Guazapa</li>
-          <li>Ilopango</li>
-          <li>Mejicanos</li>
-          <li>Panchimalco</li>
-          <li>Nejapa</li>
-          <li>Rosario de Mora</li>
-          <li>San Marcos</li>
-          <li>Santiago Texacuangos</li>
-          <li>Santo Tomás</li>
-          <li>Soyapango</li>
-          <li>Tonacatepeque</li>
+        <ol id="lm">
+         
         </ol>
       </div>
       <div id="l">
         <h2>Lugares turísticos en San Salvador</h2>
-        <ul>
-          <li>Sitio arqueológico Cihuatán</li>
-          <li>El Parque Nacional El Boquerón</li>
+        <ul id="ll">
         </ul>
       </div>
     </section>
 
-    <body></body>
+    <script src="../js/departamentos.js"></script>
 </body>
 
 </html>

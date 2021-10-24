@@ -13,7 +13,7 @@
     <title>Mapa de El Salvador</title>
 </head>
 
-<body>
+<body onload="vicente()">
     <header></header>
       <nav class="navbar navbar-light bg-light fixed-top">
         <div class="container-fluid">
@@ -69,55 +69,36 @@
 
       <section>
         <div id="imagen">
-          <img src="../img/San_Vicente.png" alt="">
         </div>
   
         <div id="h">
           <h2>Habitantes:</h2>
-          <h4>230,205 </h4>
+          <h4 id="habitantes"></h4>
         </div>
         <div id="t">
           <h2>Extencion territorial:</h2>
-          <h4>1184km<sup>2</sup></h4>
+          <h4 id="extencion"></h4>
         </div>
         <div id="d2">
           <h2>Dato historico</h2>
-          <p>Fue creado el 12 de junio de 1824. Llegó a ser la capital de la República de El Salvador en el periodo que corresponde a los años de 1834 a 1840. En este sentido, cuando cumplía estas funciones, comprendía lo que actualmente son los departamentos de la Paz y Cabañas.</p>
-          <br>
-          <p>Por el lado de su cabecera departamental, se debe saber que la ciudad de San Vicente tuvo su fundación en el año 1635. Durante el periodo que corresponde a la colonización española, esta localidad pertenecía a la Intendencia de San Salvador. Sin embargo, después de la independencia de España, el departamento de San Vicente se convirtió en uno más de los 14 que integran el país centroamericano de El Salvador.</p>
+          <div id="historico"></div>
         </div>
   
         <div id="m">
           <h2>Lista de los municipios</h2>
-          <ol>
-            <li>San Vicente (Cabecera departamental)</li>
-            <li>Apastepeque</li>
-            <li>Guadalupe</li>
-            <li>San Cayetano Istepeque</li>
-            <li>Verapaz</li>
-            <li>San Lorenzo</li>
-            <li>Tepetitán</li>
-            <li>San Sebastián</li>
-            <li>Tecoluca</li>
-            <li>San Ildefonso</li>
-            <li>Santa Clara</li>
-            <li>San Esteban Catarina</li>
-            <li>Santo Domingo</li>
+          <ol id="lm">
+            
           </ol>
         </div>
         <div id="l1">
           <h2>Lugares turísticos en San Salvador</h2>
-          <ul>
-            <li>El volcán de San Vicente</li>
-            <li>La playa Los Negros</li>
-            <li>La Torre de San Vicente</li>
-            <li>La iglesia de Nuestra Señora del Pilar</li>
-            <li>Río Jiboa en El Salvador</li>
+          <ul id="ll">
+            
           </ul>
         </div>
       </section>
 
-    <body></body>
+      <script src="../js/departamentos.js"></script>
 </body>
 
 </html>

@@ -13,7 +13,7 @@
     <title>Mapa de El Salvador</title>
 </head>
 
-<body>
+<body onload="cuscatlan()">
     <header></header>
       <nav class="navbar navbar-light bg-light fixed-top">
         <div class="container-fluid">
@@ -74,163 +74,35 @@
   
         <div id="h">
           <h2>Habitantes:</h2>
-          <h4>216,446 </h4>
+          <h4 id="habitantes"></h4>
         </div>
         <div>
           <div id="t">
             <h2>Extencion territorial:</h2>
-            <h4>756km<sup>2</sup></h4>
+            <h4 id="extencion"></h4>
           </div>
         <div id="d2">
           <h2>Dato historico</h2>
-          <p>Fue considerada la principal metrópoli de los indios Pipiles precolombinos, fundada en 1504 por el monarca Pipil Topiltzín Acxitl. Desde la antigüedad esta ciudad ha sido célebre por su riquezas y belleza.</p>
-          <br>
-          <p>Cabe destacar que el departamento de Cuscatlán formaba parte del señorío de Cuzcatlán. Una nación Pipil que se extendió por la zona Central y Occidental de lo que hoy se conoce como El Salvador.</p>
+          <div id="historico"></div>
         </div>
         <div id="c">
           <h2>Celebridades</h2>
-          <div class="row row-cols-1 row-cols-md-2 g-4">
-          <div class="card mb-3" style="max-width: 500px; margin: 2%;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="../img/hernan.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Hernán “Chuvalo” Cubias</h5>
-                  <p class="card-text">Todos le conocen como “Chuvalo”. Este atleta se  destacó en el deporte, poniendo muy en alto a su ciudad natal, puesto que alcanzó llegar al Salón de la Fama en la ciudad de New York al ingresar como profesional del boxeo. Actuó en veintiocho peleas, de las cuales, solo perdió tres. En el año 1978 alcanzó el séptimo Ranking como peso ligero a nivel mundial en el campeonato de Centroamérica y El Caribe. Con sus ciento treinta libras ganó varios campeonatos nacionales e internacionales.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-3" style="max-width: 500px; margin: 2%;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="../img/rolando.jfif" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Rolando Alirio Mena</h5>
-                  <p class="card-text">Fue un profesional de la locución, quien cursó sus estudios en la escuela José Maximiliano Olano, y en el instituto Walter Thilo Deininger, fue corresponsal de prensa y se hizo merecedor de los premios “La Espiga Dorada” el “Micrófono de oro Nacional” y recibió una placa de La Asamblea Legislativa.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-3" style="max-width: 500px; margin: 2%;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="../img/rafaelcabrera.png" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Rafael Cabrera</h5>
-                  <p class="card-text">Este afamado poeta, nació en el departamento de Cuscatlán, en la ciudad de Cojutepeque, y se consagró con su poema “La Ceiba de mi Pueblo”, obra inmortal que lo llevó a recibir varias premiaciones. Su fuente de inspiración, fue Esmeralda. Murió en Guatemala, añorando su pueblo natal a la edad de 66 años.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-3" style="max-width: 500px; margin: 2%;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="../img/Ana_dolores.jfif" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Ana Dolores Arias</h5>
-                  <p class="card-text">Aunque su profesión, fue la de educadora, se destacó por sus grandes obras literarias en el género de la poesía, junto a Rafael Cabrera, con su seudónimo de Esmeralda, se les conoce como “los Novios de Cuscatlán”</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-3" style="max-width: 500px; margin: 2%;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="../img/antonio_beltran.jfif" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Antonio Beltrán González</h5>
-                  <p class="card-text">Fue un destacado personaje reconocido en el arte de la pirotecnia. Desempeñó varios cargos gubernamentales con gran honestidad y eficacia, apreciado por su pueblo y por su gestión dentro de algunas labores sociales. Se le reconoce como el fundador del Carnaval Enerino, y como buen practicante de la religión católica, perteneció a la Hermandad del Santo Entierro del Sepulcro de La parroquia San Juan.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-3" style="max-width: 500px; margin: 2%;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="../img/Julia_dias.jfif" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Julia Díaz</h5>
-                  <p class="card-text">Famosa por su pincel, destacada por sus hermosas pinturas que han puesto muy en alto a los hijos de Cuscatlán. Fue discípula de Valero Lecha, destacado maestro de la pintura española. Esta valiosa joya de la pintura, fue fundadora de “La Galería de Arte de El Salvador”. Sus obras han sido expuestas en varias y reconocidas galerías de arte en Argentina, Colombia, Venezuela, Estados Unidos, España, Italia y en toda Centroamérica. Antes de morir, recibió la Orden Nacional “José Matías Delgado”</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-3" style="max-width: 500px; margin: 2%;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="../img/Zamora.jfif" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">General Rubén G. Zamora</h5>
-                  <p class="card-text">Se desempeñó como director del hospital Rosendo Alvarenga de Cojutepeque durante veintiséis años. Durante toda su carrera como galeno, contribuyó a la formación de muchísimas promociones de médicos y enfermeras, dejando muy en alto se gestión administrativa, y poniendo su conocimiento al servicio de los más necesitados. Fue un médico de gran sensibilidad humana, a quien se le debe el rescate de muchas vidas.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-3" style="max-width: 500px; margin: 2%;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="../img/Jose_rivas.jfif" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">General José María Rivas</h5>
-                  <p class="card-text">Fue considerado como “Benemérito de la Patria”, reconocido como un pundonoroso militar, muy apegado a la justicia y destacado por su honorabilidad intachable. Su constante espíritu de superación, lo llevó a asumir muchos compromisos con su patria, saliendo siempre airoso en todas las actividades que como militar emprendió. Excelente esposo, amante y padre de familia. Fue un mujeriego empedernido.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="row row-cols-1 row-cols-md-2 g-4" id="celebridades">
         </div>
         </div>
         <div id="m1">
           <h2>Lista de los municipios</h2>
-          <ol>
-            <li>Cojutepeque (Cabecera departamental)</li>
-            <li>Candelaria</li>
-            <li>El Carmen</li>
-            <li>El Rosario</li>
-            <li>Monte San Juan</li>
-            <li>Oratorio de Concepción</li>
-            <li>San Bartolomé Perulapía</li>
-            <li>San Cristóbal</li>
-            <li>San José Guayabal</li>
-            <li>San Pedro Perulapán</li>
-            <li>San Rafael Cedros</li>
-            <li>San Ramón</li>
-            <li>Santa Cruz Analquito</li>
-            <li>Santa Cruz Mi Chapa</li>
-            <li>Suchitoto</li>
-            <li>Tenancingo</li>
+          <ol id="lm">
           </ol>
         </div>
         <div id="l1">
           <h2>Lugares turísticos en San Salvador</h2>
-          <ul>
-            <li>El Cerro de las Pavas</li>
-            <li>Volcán Chichontepec</li>
-            <li>El Cerro la Colima</li>
-            <li>La ciudad de Suchitoto</li>
-            <li>La Peña Herrera</li>
-            <li>Río Jiboa en El Salvador</li>
+          <ul id="ll">
           </ul>
         </div>
       </section>
 
-    <body></body>
+      <script src="../js/departamentos.js"></script>
 </body>
 
 </html>

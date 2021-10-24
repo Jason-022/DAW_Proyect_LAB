@@ -13,7 +13,7 @@
     <title>Mapa de El Salvador</title>
 </head>
 
-<body>
+<body onload="miguel()">
     <header></header>
       <nav class="navbar navbar-light bg-light fixed-top">
         <div class="container-fluid">
@@ -74,58 +74,29 @@
   
         <div id="h">
           <h2>Habitantes:</h2>
-          <h4>520,022 </h4>
+          <h4 id="habitantes"></h4>
         </div>
         <div id="t">
           <h2>Extencion territorial:</h2>
-          <h4>2,077.1km<sup>2</sup></h4>
+          <h4 id="extencion"></h4>
         </div>
         <div id="d2">
           <h2>Dato historico</h2>
-          <p>La historia de la conquista de este departamento, comenzó en el año 1525, cuando un grupo de soldados españoles, comandadas por Pedro Alvarado, remontó el río Paz y en vista de sus reiterados e infructuosos encuentros con los nativos, decide enviar a Luis de Moscoso con ciento veinte hombres armados, quienes deciden fundar en ese lugar una villa. Esta fecha coincide con el día de la celebración de San Miguel Arcángel, y esto originó el nombre del departamento.</p>
-          <br>
-          <p>Inicialmente San Miguel era considera toda la zona oriente de El Salvador, pero fue dividido en 1800 en 4 departamentos, estos son Morazán, la Unión, Usulután y San Miguel.</p>
+          <div id="historico"></div>
         </div>
   
         <div id="m">
           <h2>Lista de los municipios</h2>
-          <ol>
-            <li>San Miguel (Cabecera departamental)</li>
-            <li>Carolina</li>
-            <li>Chapeltique</li>
-            <li>Chinameca</li>
-            <li>Chirilagua</li>
-            <li>Ciudad Barrios</li>
-            <li>Comacarán</li>
-            <li>El Tránsito</li>
-            <li>Lolotique</li>
-            <li>Moncagua</li>
-            <li>Nueva Guadalupe</li>
-            <li>Nuevo Edén de San Juan</li>
-            <li>Quelepa</li>
-            <li>San Antonio</li>
-            <li>San Gerardo</li>
-            <li>San Jorge</li>
-            <li>San Luis de la Reina </li>
-            <li>San Rafael de Oriente</li>
-            <li>Sesori </li>
-            <li>Uluazapa</li>
+          <ol id="lm">
           </ol>
         </div>
         <div id="l1">
           <h2>Lugares turísticos</h2>
-          <ul>
-            <li>Playa del Cuco</li>
-            <li>El Turicentro</li>
-            <li>Altos de La Cueva</li>
-            <li>La Posada de Los Pájaros</li>
-            <li>Aqua Park </li>
-            <li>Ruina arqueológica Moncagua</li>
-            <li>Ruina arqueológica Quelepa</li>
-            <li>Ruina arqueológica Uluazapa</li>
+          <ul id="ll">
           </ul>
         </div>
       </section>
+      <script src="../js/departamentos.js"></script>
 </body>
 
 </html>

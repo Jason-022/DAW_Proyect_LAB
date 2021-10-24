@@ -13,7 +13,7 @@
     <title>Mapa de El Salvador</title>
 </head>
 
-<body>
+<body onload="union()">
     <header></header>
       <nav class="navbar navbar-light bg-light fixed-top">
         <div class="container-fluid">
@@ -69,101 +69,39 @@
 
       <section>
        <div id="imagen">
-        <img src="../img/La_Union.png" alt="">
        </div>
   
         <div id="h">
           <h2>Habitantes:</h2>
-          <h4>372,271</h4>
+          <h4 id="habitantes"></h4>
         </div>
         <div id="t">
           <h2>Extencion territorial:</h2>
-          <h4>2,074km<sup>2</sup></h4>
+          <h4 id="extencion"></h4>
         </div>
         <div id="d2">
           <h2>Dato historico</h2>
-          <p>A la llegada de los españoles a esta región en el año 1522, todo este territorio estaba ocupado por las tribus de los Lencas. Estos dieron un feroz combate para defender la tenencia de sus tierras y sus costumbres. No fue fácil para los conquistadores apoderarse de estas tierras, como tampoco fue fácil para los indígenas quienes tuvieron que pasar por todo tipo de vejámenes y torturas antes de ceder sus dominios.</p>
-          <br>
-          <p>Fue declarado departamento en 1865 durante el mandato de Francisco Dueñas Díaz, la cabecera departamental es el municipio de La Unión.</p>
+          <div id="historico"></div>
         </div>
         <div id="c">
           <h2>Celebridades</h2>
-          <div class="row row-cols-1 row-cols-md-2 g-4">
-          <div class="card mb-3" style="max-width: 500px; margin: 2%;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="../img/Juan_José_Guzmán.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Juan José Guzmán</h5>
-                  <p class="card-text">Nació en el año 1797. Fue un militar, licenciado y político salvadoreño que inició sus estudios en la Villa de San Vicente de Austria y Lorenzana. Luego continuó en la Universidad de San Carlos de Guatemala donde los culminó graduándose como doctor en derecho civil.</p>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-          <div class="card mb-3" style="max-width: 500px; margin: 2%;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="../img/napoleon_viera.jfif" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Napoleón Viera Altamirano</h5>
-                  <p class="card-text">Este famoso periodista salvadoreño nació el 22 de junio del año 1893 en el Departamento de la Unión en El Salvador. En el año 1908 logró publicar su primer poema en el Diario Latino, lo que lo llevó a dar sus primeros pasos como periodista.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-3" style="max-width: 500px; margin: 2%;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="../img/Hugolindo.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Hugo Lindo Olivares</h5>
-                  <p class="card-text">Este célebre personaje salvadoreño, nació en el departamento de la Unión, el 13 de octubre del año 1917. Durante su vida fue político, diplomático y escritor. Aparte, también fue embajador de El Salvador ante la República de Chile durante los años 1953 hasta 1959 y de Colombia durante los años 1959 hasta 1960.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="row row-cols-1 row-cols-md-2 g-4" id="celebridades">
+         
         </div>
         </div>
         <div id="m">
           <h2>Lista de los municipios</h2>
-          <ol>
-            <li>La Unión (Cabecera departamental)</li>
-            <li>San Alejo</li>
-            <li>Yucuaiquín</li>
-            <li>Conchagua</li>
-            <li>Intipucá</li>
-            <li>San José</li>
-            <li>El Carmen</li>
-            <li>Yayantique</li>
-            <li> Bolívar</li>
-            <li>Meanguera del Golfo</li>
-            <li>Santa Rosa de Lima</li>
-            <li>Pasaquina</li>
-            <li>Anamoros</li>
-            <li>Nueva Esparta</li>
-            <li>El Sauce</li>
-            <li>Concepción de Oriente</li>
-            <li>Polorós</li>
-            <li>Lislique</li>
+          <ol id="lm">
           </ol>
         </div>
         <div id="l1">
           <h2>Lugares turísticos</h2>
-          <ul>
-            <li>La laguna Olomega</li>
-            <li>El volcán de Conchagua</li>
-            <li>Playa Golfo de Fonseca</li>
-            <li>Río Torola en El Salvador</li>
+          <ul id="ll">
+           
           </ul>
         </div>
       </section>
+      <script src="../js/departamentos.js"></script>
 </body>
 
 </html>
