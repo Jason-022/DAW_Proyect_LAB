@@ -441,3 +441,16 @@ img{
     margin-top: 150px;
     margin-left: 968px;
 }
+
+/* Estilos de formulario */
+.for{
+    text-align: center;
+}
+.marg{
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+.control{
+    margin-left: 30%;
+    margin-right: 30%;
+}

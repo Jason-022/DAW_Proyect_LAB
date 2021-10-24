@@ -1,0 +1,77 @@
+[
+    {
+        "id_departamento": "1",
+        "nombre_departamento": "Ahuachapán",
+        "Habitantes": "129750"
+    },
+    {
+        "id_departamento": "2",
+        "nombre_departamento": "Cabañas",
+        "Habitantes": "149326"
+    },
+    {
+        "id_departamento": "3",
+        "nombre_departamento": "Chalatenango",
+        "Habitantes": "274878"
+    },
+    {
+        "id_departamento": "4",
+        "nombre_departamento": "Cuscatlán",
+        "Habitantes": "216446"
+    },
+    {
+        "id_departamento": "5",
+        "nombre_departamento": "La Libertad",
+        "Habitantes": "843500"
+    },
+    {
+        "id_departamento": "6",
+        "nombre_departamento": "La paz",
+        "Habitantes": "288022"
+    },
+    {
+        "id_departamento": "7",
+        "nombre_departamento": "La Unión",
+        "Habitantes": "372271"
+    },
+    {
+        "id_departamento": "8",
+        "nombre_departamento": "Morazán",
+        "Habitantes": "252500"
+    },
+    {
+        "id_departamento": "9",
+        "nombre_departamento": "San Miguel",
+        "Habitantes": "520022"
+    },
+    {
+        "id_departamento": "10",
+        "nombre_departamento": "San Miguel",
+        "Habitantes": "2557761"
+    },
+    {
+        "id_departamento": "11",
+        "nombre_departamento": "San Salvador",
+        "Habitantes": "2557761"
+    },
+    {
+        "id_departamento": "12",
+        "nombre_departamento": "Santa Ana",
+        "Habitantes": "631100"
+    },
+    {
+        "id_departamento": "13",
+        "nombre_departamento": "San Vicente",
+        "Habitantes": "230205"
+    },
+    {
+        "id_departamento": "14",
+        "nombre_departamento": "Sonsonate",
+        "Habitantes": "518522"
+    },
+    {
+        "id_departamento": "15",
+        "nombre_departamento": "Usulután",
+        "Habitantes": "338332"
+    }
+]
