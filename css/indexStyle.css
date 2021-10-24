@@ -454,3 +454,6 @@ img{
     margin-left: 30%;
     margin-right: 30%;
 }
+.ErrorN,.ErrorA,.ErroE{ display: none; font-size: 0.8em; color: red;}
+.ErrorN.visible,.ErrorA.visible,.ErroE.visible{display: block;}
+input.invalid {border-color: red;}
