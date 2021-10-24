@@ -26,9 +26,62 @@
     <header>
 
     </header>
-    <nav>
-
-    </nav>
+    <nav class="navbar navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <h2 class="nav">Mapa de El Salvador</h2>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <Mapa class="nav-link" aria-current="page" href="#">Mapa de El Salvador</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Zona Occidental</a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item" href="DepartamentosHtml/SantaAna.html">Departamento de Santa Ana</a></li>
+                    <li><a class="dropdown-item" href="DepartamentosHtml/Ahuchapan.html">Departamento de Ahuachapán</a></li>
+                    <li><a class="dropdown-item" href="DepartamentosHtml/Sonsonate.html">Departamento de Sonsonate</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Zona Central</a>
+                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                      <li><a class="dropdown-item" href="DepartamentosHtml/Cabañas.html">Departamento de Cabañas</a></li>
+                      <li><a class="dropdown-item" href="DepartamentosHtml/Chalatenango.html">Departamento de Chalatenango</a></li>
+                      <li><a class="dropdown-item" href="DepartamentosHtml/SanSalvador.html">Departamento de San Salvador</a></li>
+                      <li><a class="dropdown-item" href="DepartamentosHtml/LaLibertad.html">Departamento de La Libertad</a></li>
+                      <li><a class="dropdown-item" href="DepartamentosHtml/Cuscatlan.html">Departamento de Cuscatlán</a></li>
+                      <li><a class="dropdown-item" href="DepartamentosHtml/LaPaz.html">Departamento de La Paz</a></li>
+                      <li><a class="dropdown-item" href="DepartamentosHtml/SanVicente.html">Departamento de San Vicente</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#"id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Zona Oriental</a>
+                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                      <li><a class="dropdown-item" href="DepartamentosHtml/SanMiguel.html">Departamento de San Miguel</a></li>
+                      <li><a class="dropdown-item" href="DepartamentosHtml/Usulutan.html">Departamento de Usulután</a></li>
+                      <li><a class="dropdown-item" href="DepartamentosHtml/Morazan.html">Departamento de Morazán</a></li>
+                      <li><a class="dropdown-item" href="DepartamentosHtml/LaUnion.html">Departamento de La Union</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="formulario.html">Formulario</a>
+                  </li>
+              </ul>
+              <div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <br><br><br>
     <section class="control mt-4">
         <form method="post">
             <div class="border border-3 border-info rounded-3">
