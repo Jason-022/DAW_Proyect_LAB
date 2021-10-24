@@ -13,7 +13,7 @@
     <title>Mapa de El Salvador</title>
 </head>
 
-<body>
+<body onload="ahuchapan()">
     <header></header>
       <nav class="navbar navbar-light bg-light fixed-top">
         <div class="container-fluid">
@@ -68,99 +68,43 @@
 
 
       <section>
-        <div id="imagen">
-          <img src="../img/Ahuchapan.png" alt="">
-        </div>
+        <div id="imagen"></div>
   
         <div id="h">
           <h2>Habitantes:</h2>
-          <h4>129,750</h4>
+          <h4 id="habitantes"></h4>
         </div>
         <div id="t">
           <h2>Extencion territorial:</h2>
-          <h4>1,240km<sup>2</sup></h4>
+          <h4 id="extencion"></h4>
         </div>
+
+
         <div id="d2">
           <h2>Dato historico</h2>
-          <p>Primero que todo, se debe saber que el nombre de este departamento es el resultado de lo que se conoce como un topónimo. En este sentido, tenemos que proviene de los vocablos en lengua náhuatl –ahua, que significa encino o roble, –cha, que significa casa o morada y –pan, que significa sitio o lugar. Por esta razón se puede traducir como “el lugar de las casas de roble”.</p>
-          <br>
-          <p>El mismo se fundó mientras se daba la administración del presidente Doctor Francisco Dueñas, con lo cual se procedió a su creación por medio decreto legislativo que entró en vigencia el 9 de febrero del año 1869.</p>
-          <br>
-          <p>Siendo su cabecera departamental la ciudad de Ahuachapán, el departamento está dividido en dos grandes partidos o distritos. Estos son el distrito de Ahuachapán y el distrito de Atiquizaya. Siendo el primero fundado por las leyes del 4 de julio de 1832, mientras que el segundo fue instituido por una ley el 26 de febrero de 1869.</p>
+          <div id="historico"></div>
         </div>
         <div id="c1">
           <h2>Celebridades</h2>
-          <div class="row row-cols-1 row-cols-md-2 g-4">
-          <div class="card mb-3" style="max-width: 500px; margin: 2%;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="../img/Alfredo_espino.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Edgardo Alfredo Espino Najarro</h5>
-                  <p class="card-text">Nació en el departamento de Ahuachapán el 8 de enero del año 1900. Su pasión por las letras y el arte fue inculcada desde el seno de su hogar, teniendo como padres al Señor Alfonso Espino y la señora Enriqueta Najarro de Espino, los cuales se desempeñaron ambos como profesores y poetas.</p>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-          <div class="card mb-3" style="max-width: 500px; margin: 2%;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="../img/Arturo Romero.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Arturo Romero</h5>
-                  <p class="card-text">Es uno de los personajes más importantes en el área de la medicina salvadoreña. Tanto así, que se le atribuye ser uno de las personas que fundaron el Colegio de Médico de El Salvador. En honor a esta insigne y ejemplar persona, la cuarta Avenida Sur de Ahuachapán ha sido enaltecida con el nombre de del doctor Arturo Romero.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-3" style="max-width: 500px; margin: 2%;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="../img/Francisco_Menéndez.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Francisco Menéndez Valdivieso</h5>
-                  <p class="card-text">Cuenta la historia que el General Francisco Menéndez Valdivieso nació en la capital del departamento de Ahuachapán un 3 de diciembre de 1830.   Muere en la ciudad de San Salvador un 22 de junio del año de 1890. El mismo se ha inmortalizado en las páginas de la historia de este país por ser un admirable militar y político de El Salvador. Destacando por sobre todas sus hazañas el hecho de haberse desempeñado como presidente de la república en el periodo que abarca los años de 1885 a 1890.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="row row-cols-1 row-cols-md-2 g-4" id="celebridades">
+          
         </div>
         </div>
         <div id="m1">
           <h2>Lista de los municipios</h2>
-          <ol>
-            <li>Ahuachapán (Cabecera departamental)</li>
-            <li>Aáneca</li>
-            <li>Atiquizaya</li>
-            <li>Jujutla</li>
-            <li>Concepción de Ataco</li>
-            <li>San Pedro Puxtla</li>
-            <li>Guaymango</li>
-            <li>San Lorenzo</li>
-            <li>Tacuba</li>
-            <li>San Francisco Menéndez</li>
-            <li>El Refugio</li>
-            <li>Turín</li>
+          <ol id="lm">
+            
           </ol>
         </div>
         <div id="l2">
           <h2>Lugares turísticos en San Salvador</h2>
-          <ul>
-            <li>El Bosque de Santa Rita</li>
-            <li>La Ruta de las Flores</li>
-            <li>La playa Barra de Santiago</li>
-            <li>Río Paz en El Salvador</li>
+          <ul id="ll">
+            
           </ul>
         </div>
       </section>
 
+      <script src="../js/departamentos.js"></script>
 
 </body>
 

@@ -13,7 +13,7 @@
     <title>Mapa de El Salvador</title>
 </head>
 
-<body>
+<body onload="sonsonate()">
     <header></header>
       <nav class="navbar navbar-light bg-light fixed-top">
         <div class="container-fluid">
@@ -69,77 +69,38 @@
 
       <section>
         <div id="imagen">
-          <img src="../img/Sonsonate.png" alt="">
         </div>
   
         <div id="h">
           <h2>Habitantes:</h2>
-          <h4>518,522 </h4>
+          <h4 id="habitantes"> </h4>
         </div>
         <div id="t">
           <h2>Extencion territorial:</h2>
-          <h4>1,226km<sup>2</sup></h4>
+          <h4 id="extencion"></h4>
         </div>
         <div id="d2">
           <h2>Dato historico</h2>
-          <p>Históricamente, Sonsonate era una vieja provincia de la Capitanía General de Guatemala. Sin embargo, pudo alcanzar la independencia de los españoles en el año 1821. Pero no fue sino hasta 1824 cuando pudo, conjuntamente con la provincia de San Salvador, llegar a formar lo que hoy se conoce como la República de El Salvador.</p>
-          <br>
-          <p>Por el lado de su ciudad capital, podemos decir que desde hace mucho tiempo se le considera como un punto de interés comercial debido a los grandes cultivos de café que se dan en las cercanías, encontrándose aproximadamente a unos 19 kilómetros del municipio de Acajutla y 62 kilómetros de distancia de la capital del País, la ciudad de San Salvador.</p>
-          <br>
-          <p>Según los historiadores, la ciudad de Sonsonate se fundó hacia el año 1552. Pero bajo el nombre de Villa de la Santísima Trinidad de Sonsonate. En este sentido, para la época de la colonia sirvió como sede de la Alcaldía Mayor de Sonsonate. Ya cuando se alcanzó la independencia de los españoles, hacia el año de 1824, se le asignó el título de ciudad, siendo como la cabecera departamental del departamento de Sonsonate..</p>
+          <div id="historico"></div>
         </div>
         <div id="c2">
           <h2>Celebridades</h2>
-          <div class="row row-cols-1 row-cols-md-2 g-4">
-          <div class="card mb-3" style="max-width: 500px; margin: 2%;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="../img/Salarrue_joven.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Salvador Efraín Salazar Arrué</h5>
-                  <p class="card-text">Uno de los personajes más destacados que ha salido de estas tierras es Salvador Efraín Salazar Arrué, popularmente conocido como Salarrué. Nace en el municipio de Sonsonate un 22 de octubre del año 1899. Muere en el cantón Los Planes de Renderos del departamento de San Salvador el 27 de noviembre de 1975.</p>
-                  <p class="card-text">Se le reconoce por ser un destacado artista que dejó un gran legado en el área de las artes plásticas y la literatura. Sin embargo, es en el campo de la narrativa donde alcanzó un mayor éxito, donde salen a relucir sus obras maestras “Cuentos de cipotes” y “Cuentos de barro”.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="row row-cols-1 row-cols-md-2 g-4" id="celebridades">
           
         </div>
         </div>
         <div id="m1">
           <h2>Lista de los municipios</h2>
-          <ol>
-            <li>Sonsonate (Cabecera departamental)</li>
-            <li>Armenia</li>
-            <li>Acajutla</li>
-            <li>Cuisnahuat</li>
-            <li>Caluco</li>
-            <li>Juayúa</li>
-            <li>Izalco</li>
-            <li>San Antonio del Monte</li>
-            <li>Santa Isabel Ishuatán</li>
-            <li>Sonzacate</li>
-            <li>Santo Domingo de Guzmán</li>
-            <li>Santa Catarina Masahuat</li>
-            <li>Salcoatitán</li>
-            <li>Nahulingo</li>
-            <li>Nahuizalco</li>
-            <li>San Julián</li>
+          <ol id="lm">
           </ol>
         </div>
         <div id="l3">
           <h2>Lugares turísticos en San Salvador</h2>
-          <ul>
-            <li>El Parque Nacional Los Volcanes</li>
-            <li>El volcán de Izalco</li>
-            <li>Playa Metalío </li>
-            <li>Playa Los Cóbanos</li>
-            <li>La Ruta de las Flores</li>
+          <ul id="ll">
           </ul>
         </div>
       </section>
+      <script src="../js/departamentos.js"></script>
 
 </body>
 

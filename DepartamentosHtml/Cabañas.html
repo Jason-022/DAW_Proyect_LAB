@@ -13,7 +13,7 @@
     <title>Mapa de El Salvador</title>
 </head>
 
-<body>
+<body onload="cabañas()">
     <header></header>
       <nav class="navbar navbar-light bg-light fixed-top">
         <div class="container-fluid">
@@ -69,24 +69,19 @@
 
       <section>
         <div id="imagen">
-          <img src="../img/Cabañas.png" alt="">
         </div>
   
         <div id="h">
           <h2>Habitantes:</h2>
-          <h4>149,326  </h4>
+          <h4 id="habitantes"></h4>
         </div>
         <div id="t">
           <h2>Extencion territorial:</h2>
-          <h4>1,240km<sup>2</sup></h4>
+          <h4 id="extencion"></h4>
         </div>
         <div id="d2">
           <h2>Dato historico</h2>
-          <p>Su creación es fechada el 10 de febrero del año de 1873. Cuando le fue dado el nombre por medio de un decreto legislativo a manera de homenaje de un político hondureño centroamericano llamado José Trinidad Cabañas.</p>
-          <br>
-          <p>La historia cuenta que este hombre de procedencia hondureña fue siempre leal a sus ideales centroamericanos, labor al cual dedicó toda su vida. Esto motivó a los legisladores a pronunciar un decreto legislativo en el año de 1873 donde se estipulaba el nombre que recibiría dicho departamento.</p>
-          <br>
-          <p>Se sabe que lo que actualmente es el departamento de Cabañas, se instauró mientras se daba la administración del quien era en ese momento el Mariscal de Campo, el señor Santiago González precisamente el 10 de febrero del año 1873.</p>
+          <div id="historico"></div>
         </div>
         <div id="c">
           <h2>Celebridades</h2>
@@ -111,26 +106,16 @@
         </div>
         <div id="m1">
           <h2>Lista de los municipios</h2>
-          <ol>
-            <li>Sensuntepeque (Cabecera departamental)</li>
-            <li>Dolores</li>
-            <li>Cinquera</li>
-            <li>Ilobasco</li>
-            <li>Guacotecti</li>
-            <li>Jutiapa</li>
-            <li>San Isidro</li>
-            <li>Victoria</li>
-            <li>Tejutepeque</li>
+          <ol id="lm">
           </ol>
         </div>
         <div id="l2">
           <h2>Lugares turísticos en San Salvador</h2>
-          <ul>
-            <li>La Planta Hidroeléctrica</li>
-            <li>Río Lempa</li>
+          <ul id="ll">
           </ul>
         </div>
       </section>
+      <script src="../js/departamentos.js"></script>
 </body>
 
 </html>
