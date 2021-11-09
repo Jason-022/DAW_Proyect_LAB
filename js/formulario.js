@@ -36,7 +36,7 @@ function guardar() {
     var errorcard3 = document.getElementById("errorcardMsg");
     var msg;
     expcard=/^[a-zA-Z]$/im;
-
+    console.log(myName);
 
     if(!myName.value ){
         errorcard1.classList.add("visible");
@@ -161,6 +161,14 @@ function Eliminar() {
 function DelateData() {
     localStorage.clear();
 }
+function Controlador($scope, $log) {
+
+    $scope.registrar = function(usuario) {
+      $log.info('Usuario: ');
+      $log.info(usuario);
+      $log.info('fue registrado correctamente!');
+    };
+  };
 
 if(window.addEventListener){
     window.addEventListener("load", init, false);
