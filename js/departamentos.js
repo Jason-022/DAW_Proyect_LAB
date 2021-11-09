@@ -581,10 +581,432 @@ var Departamentos = {
 };
 //Obteniendo el elemento contenedor donde se cargarán
 //todos los datos del objeto JSON
+function ahuchapan() {
+    var div = document.getElementById("imagen");
+    div.innerHTML = volcarDatos(Departamentos.Nombres);
+    function volcarDatos(datosid) {
+        var total = datosid.length;
+        data = "";
+        for (var i = 0; i < total; i++) {
+            if (datosid[i].id == 1) {
+                data += "<img src='" + datosid[i].imagen + "' alt=''>";
+            }
+        }
+        return data;
+    }
+
+
+    var div1 = document.getElementById("habitantes");
+    div1.innerHTML = volcarDatos1(Departamentos.Nombres);
+    function volcarDatos1(datos1) {
+        var total = datos1.length;
+        data1 = "";
+        for (var i = 0; i < total; i++) {
+            if (datos1[i].id == 1) {
+                data1 += datos1[i].habitantes;
+            }
+        }
+        return data1;
+    }
+
+
+    var div3 = document.getElementById("extencion");
+    div3.innerHTML = volcarDatos3(Departamentos.Nombres);
+    function volcarDatos3(datos3) {
+        var total = datos3.length;
+        data3 = "";
+        for (var i = 0; i < total; i++) {
+            if (datos3[i].id == 1) {
+                data3 += datos3[i].extencion + "<sup>2</sup>";
+            }
+        }
+        return data3;
+    }
+
+
+    var div4 = document.getElementById("historico");
+    div4.innerHTML = volcarDatos4(Departamentos.Nombres);
+    function volcarDatos4(datos4) {
+        var total = datos4.length;
+        data4 = "";
+        for (var i = 0; i < total; i++) {
+            if (datos4[i].id == 1) {
+                data4 += "<p>" + datos4[i].infoh1 + "</p><br>";
+                data4 += "<p>" + datos4[i].infoh2 + "</p><br>";
+                data4 += "<p>" + datos4[i].infoh3 + "</p>";
+            }
+        }
+        return data4;
+    }
+
+    var div5 = document.getElementById("lm");
+    div5.innerHTML = volcarDatos5(Departamentos.Nombres);
+    function volcarDatos5(datos5) {
+        var total = datos5.length;
+        data5 = "";
+        for (var i = 0; i < total; i++) {
+            if (datos5[i].id == 1) {
+                data5 += "<li>" + datos5[i].lm1 + "</li>";
+                data5 += "<li>" + datos5[i].lm2 + "</li>";
+                data5 += "<li>" + datos5[i].lm3 + "</li>";
+                data5 += "<li>" + datos5[i].lm4 + "</li>";
+                data5 += "<li>" + datos5[i].lm5 + "</li>";
+                data5 += "<li>" + datos5[i].lm6 + "</li>";
+                data5 += "<li>" + datos5[i].lm7 + "</li>";
+                data5 += "<li>" + datos5[i].lm8 + "</li>";
+                data5 += "<li>" + datos5[i].lm9 + "</li>";
+                data5 += "<li>" + datos5[i].lm10 + "</li>";
+                data5 += "<li>" + datos5[i].lm11 + "</li>";
+                data5 += "<li>" + datos5[i].lm12 + "</li>";
+            }
+        }
+        return data5;
+    }
+
+
+    var div6 = document.getElementById("ll");
+    div6.innerHTML = volcarDatos6(Departamentos.Nombres);
+    function volcarDatos6(datos6) {
+        var total = datos6.length;
+        data6 = "";
+        for (var i = 0; i < total; i++) {
+            if (datos6[i].id == 1) {
+                data6 += "<li>" + datos6[i].ll1 + "</li>";
+                data6 += "<li>" + datos6[i].ll2 + "</li>";
+                data6 += "<li>" + datos6[i].ll3 + "</li>";
+                data6 += "<li>" + datos6[i].ll4 + "</li>";
+            }
+        }
+        return data6;
+    }
+
+
+    var div7 = document.getElementById("celebridades");
+    div7.innerHTML = volcarDatos7(Departamentos.Nombres);
+    function volcarDatos7(datos7) {
+        var total = datos7.length;
+        data7 = "";
+        for (var i = 0; i < total; i++) {
+            if (datos7[i].id == 1) {
+                data7 += "<div class='card mb-3' style='max-width: 500px; margin: 2%;'>";
+                data7 += "<div class='row g-0'>";
+                data7 += "<div class='col-md-4'>";
+                data7 += "<img src='" + datos7[i].img1 + "' class='img-fluid rounded-start' alt='...'>";
+                data7 += "</div>";
+                data7 += "<div class='col-md-8'>";
+                data7 += "<div class='card-body'>";
+                data7 += "<h5 class='card-title'>" + datos7[i].celebridad1 + "</h5>";
+                data7 += "<p class='card-text'>" + datos7[i].info1p1 + "</p>";
+                data7 += "</div>";
+                data7 += "</div>";
+                data7 += "</div>";
+                data7 += "</div>";
+                data7 += "<div class='card mb-3' style='max-width: 500px; margin: 2%;'>";
+                data7 += "<div class='row g-0'>";
+                data7 += "<div class='col-md-4'>";
+                data7 += "<img src='" + datos7[i].img2 + "' class='img-fluid rounded-start' alt='...'>";
+                data7 += "</div>";
+                data7 += "<div class='col-md-8'>";
+                data7 += "<div class='card-body'>";
+                data7 += "<h5 class='card-title'>" + datos7[i].celebridad2 + "</h5>";
+                data7 += "<p class='card-text'>" + datos7[i].info2p1 + "</p>";
+                data7 += "</div>";
+                data7 += "</div>";
+                data7 += "</div>";
+                data7 += "</div>";
+                data7 += "<div class='card mb-3' style='max-width: 500px; margin: 2%;'>";
+                data7 += "<div class='row g-0'>";
+                data7 += "<div class='col-md-4'>";
+                data7 += "<img src='" + datos7[i].img3 + "' class='img-fluid rounded-start' alt='...'>";
+                data7 += "</div>";
+                data7 += "<div class='col-md-8'>";
+                data7 += "<div class='card-body'>";
+                data7 += "<h5 class='card-title'>" + datos7[i].celebridad3 + "</h5>";
+                data7 += "<p class='card-text'>" + datos7[i].info3p1 + "</p>";
+                data7 += "</div>";
+                data7 += "</div>";
+                data7 += "</div>";
+                data7 += "</div>";
+            }
+        }
+        return data7;
+    }
 
 
 
 
+
+}
+
+function cabañas() {
+    var div = document.getElementById("imagen");
+    div.innerHTML = volcarDatos(Departamentos.Nombres);
+    function volcarDatos(datosid) {
+        var total = datosid.length;
+        data = "";
+        for (var i = 0; i < total; i++) {
+            if (datosid[i].id == 2) {
+                data += "<img src='" + datosid[i].imagen + "' alt=''>";
+            }
+        }
+        return data;
+    }
+    var div1 = document.getElementById("habitantes");
+    div1.innerHTML = volcarDatos1(Departamentos.Nombres);
+    function volcarDatos1(datos1) {
+        var total = datos1.length;
+        data1 = "";
+        for (var i = 0; i < total; i++) {
+            if (datos1[i].id == 1) {
+                data1 += datos1[i].habitantes;
+            }
+        }
+        return data1;
+    }
+
+
+    var div3 = document.getElementById("extencion");
+    div3.innerHTML = volcarDatos3(Departamentos.Nombres);
+    function volcarDatos3(datos3) {
+        var total = datos3.length;
+        data3 = "";
+        for (var i = 0; i < total; i++) {
+            if (datos3[i].id == 2) {
+                data3 += datos3[i].extencion + "<sup>2</sup>";
+            }
+        }
+        return data3;
+    }
+
+
+    var div4 = document.getElementById("historico");
+    div4.innerHTML = volcarDatos4(Departamentos.Nombres);
+    function volcarDatos4(datos4) {
+        var total = datos4.length;
+        data4 = "";
+        for (var i = 0; i < total; i++) {
+            if (datos4[i].id == 2) {
+                data4 += "<p>" + datos4[i].infoh1 + "</p><br>";
+                data4 += "<p>" + datos4[i].infoh2 + "</p><br>";
+                data4 += "<p>" + datos4[i].infoh3 + "</p>";
+            }
+        }
+        return data4;
+    }
+
+    var div5 = document.getElementById("lm");
+    div5.innerHTML = volcarDatos5(Departamentos.Nombres);
+    function volcarDatos5(datos5) {
+        var total = datos5.length;
+        data5 = "";
+        for (var i = 0; i < total; i++) {
+            if (datos5[i].id == 2) {
+                data5 += "<li>" + datos5[i].lm1 + "</li>";
+                data5 += "<li>" + datos5[i].lm2 + "</li>";
+                data5 += "<li>" + datos5[i].lm3 + "</li>";
+                data5 += "<li>" + datos5[i].lm4 + "</li>";
+                data5 += "<li>" + datos5[i].lm5 + "</li>";
+                data5 += "<li>" + datos5[i].lm6 + "</li>";
+                data5 += "<li>" + datos5[i].lm7 + "</li>";
+                data5 += "<li>" + datos5[i].lm8 + "</li>";
+                data5 += "<li>" + datos5[i].lm9 + "</li>";
+            }
+        }
+        return data5;
+    }
+
+
+    var div6 = document.getElementById("ll");
+    div6.innerHTML = volcarDatos6(Departamentos.Nombres);
+    function volcarDatos6(datos6) {
+        var total = datos6.length;
+        data6 = "";
+        for (var i = 0; i < total; i++) {
+            if (datos6[i].id == 2) {
+                data6 += "<li>" + datos6[i].ll1 + "</li>";
+                data6 += "<li>" + datos6[i].ll2 + "</li>";
+            }
+        }
+        return data6;
+    }
+
+
+    var div7 = document.getElementById("celebridades");
+    div7.innerHTML = volcarDatos7(Departamentos.Nombres);
+    function volcarDatos7(datos7) {
+        var total = datos7.length;
+        data7 = "";
+        for (var i = 0; i < total; i++) {
+            if (datos7[i].id == 2) {
+                data7 += "<div class='card mb-3' style='max-width: 500px; margin: 2%;'>";
+                data7 += "<div class='row g-0'>";
+                data7 += "<div class='col-md-4'>";
+                data7 += "<img src='" + datos7[i].img1 + "' class='img-fluid rounded-start' alt='...'>";
+                data7 += "</div>";
+                data7 += "<div class='col-md-8'>";
+                data7 += "<div class='card-body'>";
+                data7 += "<h5 class='card-title'>" + datos7[i].celebridad1 + "</h5>";
+                data7 += "<p class='card-text'>" + datos7[i].info1p1 + "</p>";
+                data7 += "</div>";
+                data7 += "</div>";
+                data7 += "</div>";
+                data7 += "</div>";
+
+            }
+        }
+        return data7;
+    }
+
+
+
+
+}
+
+function ana() {
+    var div = document.getElementById("imagen");
+    div.innerHTML = volcarDatos(Departamentos.Nombres);
+    function volcarDatos(datosid) {
+        var total = datosid.length;
+        data = "";
+        for (var i = 0; i < total; i++) {
+            if (datosid[i].id == 3) {
+                data += "<img src='" + datosid[i].imagen + "' alt=''>";
+            }
+        }
+        return data;
+    }
+
+
+    var div1 = document.getElementById("habitantes");
+    div1.innerHTML = volcarDatos1(Departamentos.Nombres);
+    function volcarDatos1(datos1) {
+        var total = datos1.length;
+        data1 = "";
+        for (var i = 0; i < total; i++) {
+            if (datos1[i].id == 3) {
+                data1 += datos1[i].habitantes;
+            }
+        }
+        return data1;
+    }
+
+
+    var div3 = document.getElementById("extencion");
+    div3.innerHTML = volcarDatos3(Departamentos.Nombres);
+    function volcarDatos3(datos3) {
+        var total = datos3.length;
+        data3 = "";
+        for (var i = 0; i < total; i++) {
+            if (datos3[i].id == 3) {
+                data3 += datos3[i].extencion + "<sup>2</sup>";
+            }
+        }
+        return data3;
+    }
+
+
+    var div4 = document.getElementById("historico");
+    div4.innerHTML = volcarDatos4(Departamentos.Nombres);
+    function volcarDatos4(datos4) {
+        var total = datos4.length;
+        data4 = "";
+        for (var i = 0; i < total; i++) {
+            if (datos4[i].id == 3) {
+                data4 += "<p>" + datos4[i].infoh1 + "</p><br>";
+                data4 += "<p>" + datos4[i].infoh2 + "</p>";
+            }
+        }
+        return data4;
+    }
+
+    var div5 = document.getElementById("lm");
+    div5.innerHTML = volcarDatos5(Departamentos.Nombres);
+    function volcarDatos5(datos5) {
+        var total = datos5.length;
+        data5 = "";
+        for (var i = 0; i < total; i++) {
+            if (datos5[i].id == 3) {
+                data5 += "<li>" + datos5[i].lm1 + "</li>";
+                data5 += "<li>" + datos5[i].lm2 + "</li>";
+                data5 += "<li>" + datos5[i].lm3 + "</li>";
+                data5 += "<li>" + datos5[i].lm4 + "</li>";
+                data5 += "<li>" + datos5[i].lm5 + "</li>";
+                data5 += "<li>" + datos5[i].lm6 + "</li>";
+                data5 += "<li>" + datos5[i].lm7 + "</li>";
+                data5 += "<li>" + datos5[i].lm8 + "</li>";
+                data5 += "<li>" + datos5[i].lm9 + "</li>";
+                data5 += "<li>" + datos5[i].lm10 + "</li>";
+                data5 += "<li>" + datos5[i].lm11 + "</li>";
+                data5 += "<li>" + datos5[i].lm12 + "</li>";
+                data5 += "<li>" + datos5[i].lm13 + "</li>";
+            }
+        }
+        return data5;
+    }
+
+
+    var div6 = document.getElementById("ll");
+    div6.innerHTML = volcarDatos6(Departamentos.Nombres);
+    function volcarDatos6(datos6) {
+        var total = datos6.length;
+        data6 = "";
+        for (var i = 0; i < total; i++) {
+            if (datos6[i].id == 3) {
+                data6 += "<li>" + datos6[i].ll1 + "</li>";
+                data6 += "<li>" + datos6[i].ll2 + "</li>";
+                data6 += "<li>" + datos6[i].ll3 + "</li>";
+                data6 += "<li>" + datos6[i].ll4 + "</li>";
+                data6 += "<li>" + datos6[i].ll5 + "</li>";
+                data6 += "<li>" + datos6[i].ll6 + "</li>";
+                data6 += "<li>" + datos6[i].ll7 + "</li>";
+            }
+        }
+        return data6;
+    }
+
+
+    var div7 = document.getElementById("celebridades");
+    div7.innerHTML = volcarDatos7(Departamentos.Nombres);
+    function volcarDatos7(datos7) {
+        var total = datos7.length;
+        data7 = "";
+        for (var i = 0; i < total; i++) {
+            if (datos7[i].id == 3) {
+                data7 += "<div class='card mb-3' style='max-width: 500px; margin: 2%;'>";
+                data7 += "<div class='row g-0'>";
+                data7 += "<div class='col-md-4'>";
+                data7 += "<img src='" + datos7[i].img1 + "' class='img-fluid rounded-start' alt='...'>";
+                data7 += "</div>";
+                data7 += "<div class='col-md-8'>";
+                data7 += "<div class='card-body'>";
+                data7 += "<h5 class='card-title'>" + datos7[i].celebridad1 + "</h5>";
+                data7 += "<p class='card-text'>" + datos7[i].info1p1 + "</p>";
+                data7 += "</div>";
+                data7 += "</div>";
+                data7 += "</div>";
+                data7 += "</div>";
+                data7 += "<div class='card mb-3' style='max-width: 500px; margin: 2%;'>";
+                data7 += "<div class='row g-0'>";
+                data7 += "<div class='col-md-4'>";
+                data7 += "<img src='" + datos7[i].img2 + "' class='img-fluid rounded-start' alt='...'>";
+                data7 += "</div>";
+                data7 += "<div class='col-md-8'>";
+                data7 += "<div class='card-body'>";
+                data7 += "<h5 class='card-title'>" + datos7[i].celebridad2 + "</h5>";
+                data7 += "<p class='card-text'>" + datos7[i].info2p1 + "</p>";
+                data7 += "</div>";
+                data7 += "</div>";
+                data7 += "</div>";
+                data7 += "</div>";
+            }
+        }
+        return data7;
+    }
+
+
+
+
+}
 
 function sonsonate() {
     var div = document.getElementById("imagen");
